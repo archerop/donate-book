@@ -1,0 +1,223 @@
+label {
+    display: inline;
+}
+ 
+.regular-checkbox {
+    display: none;
+}
+ 
+.regular-checkbox + label {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+ 
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+ 
+.regular-checkbox:checked + label {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+ 
+.regular-checkbox:checked + label:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #99a1a7;
+}
+ 
+ 
+.big-checkbox + label {
+    padding: 18px;
+}
+ 
+.big-checkbox:checked + label:after {
+    font-size: 28px;
+    left: 6px;
+}
+.tlist {
+padding:0px;box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+	margin-top:10px;padding:0px;
+	width:100%;
+	border:0px solid #000000;
+   }
+.tlist>table{
+	width:100%;
+	//height:100%;
+	margin:0px;padding:0px;
+	border-collapse: collapse;
+}
+.tlist>table>tbody>tr:nth-child(odd){
+
+background-color:ghostwhite;
+
+ }
+.tlist>table>tbody>tr:nth-child(even)    { background-color:#ffffff; }
+.tlist>table>tbody>tr>td{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:7px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+.tlist>table>thead>tr>th{
+	padding:5px;
+	background-color:#ffd700;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:1px 1px 1px 1px;
+	font-size:18px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+	cursor: pointer;
+}
+.problemtitle{
+	vertical-align:middle;
+	border:1px solid #000000;
+	border-width:1px 1px 1px 1px;
+	text-align:left;
+	padding:7px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+.myButton,
+.ui-dialog-buttonset button{
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23)) !important;
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%) !important;
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%) !important;
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%) !important;
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%) !important;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%) !important;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0) !important;
+
+	background-color:#ffec64 !important;
+
+	-moz-border-radius:6px !important;
+	-webkit-border-radius:6px !important;
+	border-radius:6px !important;
+
+	display:inline-block !important;
+	color:#333333 !important;
+	font-family:arial !important;
+	font-size:15px !important;
+	font-weight:bold !important;
+	padding:6px 24px !important;
+	text-decoration:none !important;
+
+    border: 2px outset buttonface !important;
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-image-width: initial !important;
+    border-image-outset: initial !important;
+    border-image-repeat: initial !important;
+
+}
+.myButton:hover,
+.ui-dialog-buttonset button:hover {
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64)) !important;
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%) !important;
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%) !important;
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%) !important;
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%) !important;
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%) !important;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0) !important;
+
+	background-color:#ffab23 !important;
+}
+.myButton:active ,
+.ui-dialog-buttonset button:active{
+	position:relative !important;
+	top:1px !important;
+}
+
+/*圖片對齊*/
+input[type="image"],
+img{
+	vertical-align:middle;
+}
+
+/*題目欄位靠左對齊*/
+table[id="listTable"] td>p{
+	text-align:left;
+}
+
+/*學生名單顯示*/
+.student_name
+{
+	border-radius:10px;
+	text-align:center;
+	font-size:150%;
+	padding: 5px 15px;
+	min-width: 105px;
+	font-family:標楷體;
+}
+
+div .student_name{
+margin: 5px;
+/*float: left;*/
+display: inline-block;
+}
+
+.green{
+	background:#006837;
+	color:#FFFFFF;
+}
+
+.red{
+	background:#C1272D;
+	color:#FFFFFF;
+}
+
+.yellow{
+	background:#FFE200;
+	color:#000000;
+}
+
+.gray{
+	background:#B3B3B3;
+	color:#000000;
+}
+
+.student_td{
+	border: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #F19600;
+	text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p.descrip
+{
+	font-size:120%;
+}
+
+#nav_table label,
+.nuv_font{
+ font-size:18px;
+ font-weight:bold;
+ }
+
+#nav_table{
+width:100%;
+}
